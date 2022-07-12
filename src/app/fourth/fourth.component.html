@@ -1,0 +1,14 @@
+<!-- <p>Please enter the right path!</p> -->
+
+<button mat-button [matMenuTriggerFor]="menu">List of Items</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/second">
+        Item-A
+    </button>
+    <button mat-menu-item>
+        Item-B
+    </button>
+
+</mat-menu>
+
+<router-outlet></router-outlet>

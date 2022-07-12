@@ -1,0 +1,84 @@
+<!-- <nav>
+    <a routerLink="/first">FirstComponent</a><br>
+    <a routerLink="/second">SecondComponent</a><br>
+    <a routerLink="/third">ThirdComponent</a><br>
+    <a routerLink="/fourth">FourthComponent</a><br>
+</nav>
+<button (click)="goToRoute()">GoToThird</button><br>
+<br>
+<button type="button" routerLink="/customer">Customer</button>
+<router-outlet></router-outlet> 
+<!-- -----------------------------------------------------------  
+<br/><br/><input name="name" placeholder="name" type="text" [(ngModel)]="name"><br/>
+<br/>
+<input password="password" placeholder="password" type="password" [(ngModel)]="password">
+
+{{this.name}}
+
+<br/>
+<button (click)="postRequest()">Login</button> -->
+
+<!-- <div class="dropdown">
+<button class="btn btn-primary dropdown-toggle" type="button" id="list-dropdown" data-bs-toggle="dropdown">
+    Dropdown
+</button>
+<ul class="dropdown-content">
+    <li><a routerLink="/first" class="dropdown-item" ></a>A</li>
+    <li><a routerLink="/second" class="dropdown-item"></a>B</li>
+    <li><a routerLink="/third" class="dropdown-item"></a>C</li>
+
+</ul>
+</div> -->
+
+<!-- // this is dropdown example 
+
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a routerLink="/first">A</a>
+      <a routerLink="/second">B</a>
+      <a routerLink="/third">C</a>
+    </div>
+  </div> -->
+<!-- //This is used for form control and displaying its value// -->
+  <!-- <input type="text" [formControl]="testPro">
+  {{testPro.value}} -->
+
+<!-- //modifying the values of form control using form control methods present in the below click methods//-->
+<!-- <button (click)="ModifyValue()">ModifyMe</button>
+<button (click)="ClearValue()">ClearyMe</button> -->
+
+<!-- // updating the view in the html for form group and displaying them -->
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  
+  <label for="first-name">First Name:</label><br>
+  <input formControlName="firstName" id="first-name" type="text"><br>
+
+  <label for="last-name">Last Name:</label><br>
+  <input type="text" id="last-name" formControlName="lastName"><br>
+
+  
+  <!-- <div formGroupName="address">
+    <h1>Address</h1>
+    
+    
+  <label for="street">Street:</label><br>
+  <input type="text" id="street" formControlName="street"><br>
+
+  <label for="city">City:</label><br>
+  <input type="text" id="city" formControlName="city"><br>
+
+  <label for="state">State:</label><br>
+  <input type="text" id="state" formControlName="state"><br>
+
+  <label for="pin">Pin:</label><br>
+  <input type="text" id="pin" formControlName="pin"><br>
+
+  </div> -->
+  <br>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!profileForm.valid">Submit</button><br>
+</form>
+
+<!-- <app-fourth></app-fourth> -->
+
+
